@@ -1,0 +1,17 @@
+.myAction{
+    margin-top: $mg-1;
+    .action_item{
+        width: 80%;
+        margin: auto;
+        .action_content{
+            margin-left: $mg-1;
+            h4{
+                @include text($color-black-light,19px,$fw-bold-0);
+            }
+            p{
+                @include text($color-gray-4,$fs-0 +1,$fw-normal)
+            }
+        }
+    }
+
+}

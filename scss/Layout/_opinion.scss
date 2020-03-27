@@ -1,0 +1,19 @@
+.myOpinion{
+    margin-top: $mg-2;
+    .opinion_content{
+        width: 80%;
+        margin: auto;
+        .opinion_item{
+            img{
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+            }
+            .card_profile{
+                .card-title{
+                    padding: $pd-1 +5;
+                }
+            }
+        }
+    }
+}

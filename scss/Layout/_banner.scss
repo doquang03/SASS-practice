@@ -1,0 +1,37 @@
+.myBanner{
+    .head_background{
+        background: linear-gradient(to right, $color-red-1, $color-red-0);
+        height: 8px;
+    }
+    .banner_content{
+        background-color: $color-black-0;
+        height: 470px;
+        padding: 50px 0.7rem;
+        .banner_item{
+            @include text($color-white-0, 50px, $fw-bold-0);
+            width: 80%;
+            margin: auto;
+            max-width: 100%;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .banner_title{
+            @include text($color-white-0, $fs-3, $fw-bold-0);
+        }
+        .subtitle{
+            @include text($color-white-0, $fs-0, $fw-bold-0);
+        }
+    }
+}
+@include resprond-to("extra-large") {
+    .myBanner {
+      .banner_content{
+          .banner_item:first-child{
+              display: none;
+          }
+          .banner_item:last-child{
+            display: none;
+        }
+      }
+    }
+  }

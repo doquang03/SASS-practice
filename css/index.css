@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  color: #29303b;
+  background-color: #fff;
+  line-height: 1.43; }
+
+.myNavBar {
+  border-bottom: 1px solid #cacbcc;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  transition: all 1s;
+  background-color: #fff; }
+  .myNavBar.headerClass {
+    border-bottom: 5px solid #ec5252; }
+    .myNavBar.headerClass .navbar .navbar-brand img {
+      display: none; }
+  .myNavBar .navbar-brand {
+    flex-grow: 1; }
+    .myNavBar .navbar-brand img {
+      width: 110px; }
+  .myNavBar .categories {
+    flex-grow: 1;
+    color: #505763;
+    font-size: 13px;
+    font-weight: normal;
+    align-self: center; }
+  .myNavBar .inpput_search {
+    flex-grow: 5; }
+    .myNavBar .inpput_search .form-control {
+      background-color: rgba(20, 23, 28, 0.05);
+      border: none;
+      transition: none; }
+      .myNavBar .inpput_search .form-control:focus {
+        box-shadow: none;
+        border-top: 1px solid #cacbcc;
+        border-bottom: 1px solid #cacbcc;
+        border-left: 1px solid #cacbcc; }
+      .myNavBar .inpput_search .form-control:focus + .input-group-prepend .input-group-text {
+        background-color: #fff;
+        color: #ec5252;
+        border-top: 1px solid #cacbcc;
+        border-bottom: 1px solid #cacbcc;
+        border-right: 1px solid #cacbcc; }
+      .myNavBar .inpput_search .form-control:focus + .input-group-prepend:hover .input-group-text {
+        background-color: #ec5252;
+        color: #fff; }
+    .myNavBar .inpput_search .input-group-prepend .input-group-text {
+      background-color: rgba(20, 23, 28, 0.05);
+      color: #ec5252;
+      border: none; }
+    .myNavBar .inpput_search .input-group-prepend:hover .input-group-text {
+      background-color: #ec5252;
+      color: #fff; }
+  .myNavBar .navbar-nav {
+    justify-content: space-evenly;
+    width: 100%; }
+    .myNavBar .navbar-nav .nav-item .nav-link {
+      color: #29303b;
+      font-size: 13px;
+      font-weight: normal;
+      padding: 10px 20px; }
+    .myNavBar .navbar-nav .nav-item:hover {
+      background-color: rgba(20, 23, 28, 0.05); }
+    .myNavBar .navbar-nav .nav-item:nth-child(3) {
+      border-radius: 50%; }
+  @media screen and (max-width: 1200px) {
+    .myNavBar .navbar-nav .business,
+    .myNavBar .navbar-nav .instructor {
+      display: none; } }
+  @media screen and (max-width: 768px) {
+    .myNavBar .categories,
+    .myNavBar .inpput_search {
+      display: none; } }
+
+.myCover {
+  background-image: url("../img/cover.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  position: relative; }
+  .myCover .cover_content {
+    position: absolute;
+    top: 30%;
+    left: 10%; }
+    .myCover .cover_content h1 {
+      color: #fff;
+      font-size: 40px;
+      font-weight: 600; }
+    .myCover .cover_content p {
+      color: #fff;
+      font-size: 40px -2;
+      font-weight: 600; }
+    .myCover .cover_content .input .input_searchlearn {
+      padding: 28px;
+      border: none;
+      border-radius: 0;
+      box-shadow: none; }
+    .myCover .cover_content .input:placeholder-shown {
+      color: #a1a7b3;
+      font-size: 20px;
+      font-weight: normal; }
+    .myCover .cover_content .input .input-group-prepend .input-group-text {
+      background-color: #fff;
+      color: #ec5252;
+      border: none;
+      padding: 20px; }
+    .myCover .cover_content .input .input-group-prepend:hover .input-group-text {
+      background-color: #ec5252;
+      color: #fff; }
+
+.myIntro {
+  background: linear-gradient(to right, #521822, #ec5252); }
+  .myIntro .intro_content {
+    padding: 20px; }
+    .myIntro .intro_content .icon {
+      margin-right: 25px;
+      color: #fff;
+      font-size: 50px;
+      font-weight: 600; }
+    .myIntro .intro_content .icon_content {
+      padding-top: 10px; }
+      .myIntro .intro_content .icon_content p:first-child {
+        color: #fff;
+        font-size: 17px;
+        font-weight: 600;
+        margin-bottom: 0; }
+      .myIntro .intro_content .icon_content p:last-child {
+        color: #fff;
+        font-size: 15px;
+        font-weight: normal; }
+
+.myCourse {
+  margin-top: 25px; }
+  .myCourse .course_content {
+    width: 80%;
+    margin: auto; }
+    .myCourse .course_content .course_intro {
+      padding-top: 4rem;
+      text-align: center; }
+      .myCourse .course_content .course_intro h2 {
+        color: #29303b;
+        font-size: 44px;
+        font-weight: normal; }
+      .myCourse .course_content .course_intro p {
+        color: #29303b;
+        font-size: 16px;
+        font-weight: normal; }
+    .myCourse .course_content .myTab .nav {
+      justify-content: space-between;
+      border: none; }
+      .myCourse .course_content .myTab .nav .nav-item :hover .nav-link {
+        border: none; }
+      .myCourse .course_content .myTab .nav .nav-item .nav-link.active {
+        border: none;
+        border-bottom: 5px solid #007791; }
+      .myCourse .course_content .myTab .nav .nav-item .nav-link {
+        color: #29303b;
+        border: none; }
+    .myCourse .course_content .myTab .tab-content {
+      margin-top: 10px;
+      position: relative; }
+      .myCourse .course_content .myTab .tab-content .card-title {
+        color: #29303b;
+        font-size: 15px;
+        font-weight: 600; }
+      .myCourse .course_content .myTab .tab-content .card-text {
+        color: #29303b;
+        font-size: 13px;
+        font-weight: normal; }
+      .myCourse .course_content .myTab .tab-content .rating {
+        display: flex; }
+        .myCourse .course_content .myTab .tab-content .rating .rating-star {
+          color: #F4C150;
+          font-size: 13px;
+          font-weight: normal;
+          margin-right: 2px; }
+        .myCourse .course_content .myTab .tab-content .rating span:nth-child(2) {
+          color: #686f7a;
+          font-size: 13px;
+          font-weight: 600;
+          margin-right: 2px; }
+      .myCourse .course_content .myTab .tab-content .price {
+        text-align: right; }
+        .myCourse .course_content .myTab .tab-content .price .old-price {
+          color: #29303b;
+          font-size: 13px;
+          font-weight: normal;
+          text-decoration: line-through; }
+        .myCourse .course_content .myTab .tab-content .price .new-price {
+          color: #29303b;
+          font-size: 15px;
+          font-weight: 600; }
+
+.owl-prev, .owl-next {
+  position: absolute;
+  top: 42%;
+  left: -2%;
+  width: 45px;
+  height: 45px;
+  border-radius: 50% !important;
+  background-color: #fff !important;
+  box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+  z-index: 3; }
+  .owl-prev span, .owl-next span {
+    color: #007791;
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 0.5; }
+  .owl-prev:focus, .owl-next:focus {
+    outline: none; }
+
+.owl-next {
+  left: unset;
+  right: -2%; }
+
+.myStudent {
+  margin-top: 25px; }
+  .myStudent .student_content {
+    width: 80%;
+    margin: auto; }
+    .myStudent .student_content .card-title {
+      color: #29303b;
+      font-size: 15px;
+      font-weight: 600; }
+    .myStudent .student_content .card-text {
+      color: #29303b;
+      font-size: 13px;
+      font-weight: normal; }
+    .myStudent .student_content .rating {
+      display: flex; }
+      .myStudent .student_content .rating .rating-star {
+        color: #F4C150;
+        font-size: 13px;
+        font-weight: normal;
+        margin-right: 2px; }
+      .myStudent .student_content .rating span:nth-child(2) {
+        color: #686f7a;
+        font-size: 13px;
+        font-weight: 600;
+        margin-right: 2px; }
+    .myStudent .student_content .price {
+      text-align: right; }
+      .myStudent .student_content .price .old-price {
+        color: #29303b;
+        font-size: 13px;
+        font-weight: normal;
+        text-decoration: line-through; }
+      .myStudent .student_content .price .new-price {
+        color: #29303b;
+        font-size: 15px;
+        font-weight: 600; }
+
+.myAction {
+  margin-top: 10px; }
+  .myAction .action_item {
+    width: 80%;
+    margin: auto; }
+    .myAction .action_item .action_content {
+      margin-left: 10px; }
+      .myAction .action_item .action_content h4 {
+        color: #505763;
+        font-size: 19px;
+        font-weight: 600; }
+      .myAction .action_item .action_content p {
+        color: #686f7a;
+        font-size: 16px;
+        font-weight: normal; }
+
+.myBanner .head_background {
+  background: linear-gradient(to right, #521822, #ec5252);
+  height: 8px; }
+.myBanner .banner_content {
+  background-color: #29303b;
+  height: 470px;
+  padding: 50px 0.7rem; }
+  .myBanner .banner_content .banner_item {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    width: 80%;
+    margin: auto;
+    max-width: 100%;
+    text-align: center;
+    padding: 10px 0; }
+  .myBanner .banner_content .banner_title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600; }
+  .myBanner .banner_content .subtitle {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600; }
+
+@media screen and (max-width: 1200px) {
+  .myBanner .banner_content .banner_item:first-child {
+    display: none; }
+  .myBanner .banner_content .banner_item:last-child {
+    display: none; } }
+.myOpinion {
+  margin-top: 25px; }
+  .myOpinion .opinion_content {
+    width: 80%;
+    margin: auto; }
+    .myOpinion .opinion_content .opinion_item img {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%; }
+    .myOpinion .opinion_content .opinion_item .card_profile .card-title {
+      padding: 15px; }
+
+.btn-btn-white {
+  border: 1px solid #505763;
+  color: #686f7a;
+  background-color: #fff;
+  padding: 5px 10px;
+  font-weight: 600;
+  border-radius: 8%; }
+  .btn-btn-white:hover {
+    background-color: rgba(20, 23, 28, 0.05);
+    color: #686f7a; }
+
+.btn-btn-red {
+  border: 1px solid #ec5252;
+  color: #fff;
+  background-color: #ec5252;
+  padding: 5px 10px;
+  font-weight: 600;
+  border-radius: 8%; }
+  .btn-btn-red:hover {
+    background-color: #521822;
+    color: #fff; }
+
+.banner_button {
+  font-size: 15px;
+  border: 1px solid transparent;
+  color: #fff;
+  background-color: #ec5252;
+  padding: 5px 10px;
+  font-weight: 600;
+  border-radius: 8%; }
+  .banner_button:hover {
+    background-color: #521822;
+    color: #fff; }
+
+/*# sourceMappingURL=index.css.map */

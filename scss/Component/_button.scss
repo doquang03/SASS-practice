@@ -1,0 +1,15 @@
+.btn-btn-white{
+    border: 1px solid $color-black-light;
+    // border-radius: 8%;
+    @include button($color-gray-4, $color-white-0,$fw-bold-0, 5px,10px, $color-gray-1,$border-radius-circle)
+}
+.btn-btn-red{
+    border: 1px solid $color-red-0;
+    // border-radius: 8%;
+    @include button($color-white-0, $color-red-0,$fw-bold-0, 5px,10px, $color-red-1,$border-radius-circle)
+}
+.banner_button{
+    font-size: $fs-0;
+    border: 1px solid transparent;
+    @include button($color-white-0, $color-red-0,$fw-bold-0, 5px,10px, $color-red-1,$border-radius-circle)
+}

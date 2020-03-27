@@ -1,0 +1,20 @@
+.myIntro {
+  background: linear-gradient(to right, $color-red-1, $color-red-0);
+  .intro_content {
+      padding: $pd-2;
+    .icon {
+      margin-right: $mg-2;
+      @include text($color-white-0, 50px, $fw-bold-0);
+    }
+    .icon_content {
+        padding-top: $pd-1;
+      p:first-child {
+        @include text($color-white-0, $fs-0 + 2, $fw-bold-0);
+        margin-bottom: 0;
+      }
+      p:last-child {
+        @include text($color-white-0, $fs-0, $fw-normal);
+      }
+    }
+  }
+}
